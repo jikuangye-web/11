@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>招商服务工作台</title>
+  <!-- 引入 Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 引入 FontAwesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* 自定义滚动条样式 */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased text-gray-800 flex h-screen overflow-hidden">
+
+  <!-- 左侧：橙色侧边栏导航 -->
+  <aside class="w-64 bg-orange-500 text-white flex flex-col flex-shrink-0 shadow-lg">
+    <!-- 头部 Logo 区 -->
+    <div class="p-5 font-bold text-xl flex items-center gap-3 border-b border-orange-400">
+      <i class="fa-solid fa-layer-group text-2xl"></i>
+      <span>招商管理后台</span>
+    </div>
+
+    <!-- 导航菜单 -->
+    <nav class="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-orange-600 font-medium transition hover:bg-orange-600">
+        <i class="fa-solid fa-chart-pie w-5"></i> 招商总览
+      </a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-orange-600 transition font-medium">
+        <i class="fa-solid fa-shirt w-5"></i> 女童卫衣
+      </a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-orange-600 transition font-medium">
+        <i class="fa-solid fa-user-graduate w-5"></i> 男童校服
+      </a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-orange-600 transition font-medium">
+        <i class="fa-solid fa-store w-5"></i> 店铺合规
+      </a>
+      <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-orange-600 transition font-medium">
+        <i class="fa-solid fa-newspaper w-5"></i> 新规资讯
+      </a>
+    </nav>
+
+    <!-- 底部人员信息 -->
+    <div class="p-4 bg-orange-600 border-t border-orange-400 flex items-center gap-3 text-xs">
+      <i class="fa-solid fa-headset text-xl"></i>
+      <div>
+        <p class="font-bold text-sm">招商经理：岑寒</p>
+        <p class="opacity-80">联系微信号：18570028178</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 右侧：主内容区 -->
+  <main class="flex-1 overflow-y-auto p-6 space-y-6">
+
+    <!-- 顶部：深蓝色 Banner -->
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white rounded-2xl p-6 shadow-md relative overflow-hidden">
+      <div class="relative z-10 space-y-2">
+        <span class="bg-blue-700/60 text-blue-200 text-xs px-3 py-1 rounded-full font-medium inline-block border border-blue-400/30">
+          类目指引 · 专属招商路径
+        </span>
+        <h1 class="text-2xl font-bold tracking-wide">2026-2027 岑寒路径 热招品类</h1>
+        <p class="text-blue-200 text-sm">女童卫衣 · 女婴卫衣 · 男童校服 · 装扮服</p>
+      </div>
+      <!-- 背景装饰图案 -->
+      <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+    </header>
+
+    <!-- 中间：白色圆角卡片区（包含橙/绿色高亮边框） -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <!-- 卡片 1 -->
+      <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-500 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-2 text-orange-600 font-bold text-sm">
+          <i class="fa-solid fa-chart-line"></i> 市场趋势分析
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed">
+          版型/元素/六大热卖趋势：酷飒学院、复古学院、运动学院、美寿少女等。
+        </p>
+      </div>
+
+      <!-- 卡片 2 -->
+      <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-500 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-2 text-green-600 font-bold text-sm">
+          <i class="fa-solid fa-palette"></i> 视觉参考
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed">
+          模特与静物拍摄方向：低饱和吸睛、街景、Pantone 灰绿、高智感人设。
+        </p>
+      </div>
+
+      <!-- 卡片 3 -->
+      <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-orange-500 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-2 text-orange-600 font-bold text-sm">
+          <i class="fa-solid fa-vest"></i> 女童卫衣分享
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed">
+          手工粗绒边、拉链卫衣、半开襟、美式复古学院、连帽修身、水洗线迹。
+        </p>
+      </div>
+
+      <!-- 卡片 4 -->
+      <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-blue-500 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-2 text-blue-600 font-bold text-sm">
+          <i class="fa-solid fa-user-group"></i> 男童校服版型
+        </div>
+        <p class="text-xs text-gray-600 leading-relaxed">
+          男童校服 Polo、重点版型、外公机公版型、毒液赛车服/秋款。
+        </p>
+      </div>
+
+      <!-- 卡片 5（绿色高亮背景框） -->
+      <div class="bg-green-50 p-4 rounded-xl shadow-sm border border-green-300 hover:shadow-md transition">
+        <div class="flex items-center gap-2 mb-2 text-green-700 font-bold text-sm">
+          <i class="fa-solid fa-bullhorn"></i> 新拼妈资讯
+        </div>
+        <p class="text-xs text-gray-700 leading-relaxed">
+          工厂入驻条件 / 资质相关 / 上线流程。
+        </p>
+      </div>
+    </section>
+
+    <!-- 底部：类目指引表格（带橙色表头） -->
+    <section class="bg-white rounded-xl shadow-sm p-5 space-y-4">
+      <div class="border-l-4 border-orange-500 pl-3">
+        <h2 class="text-lg font-bold text-gray-800">类目指引</h2>
+        <p class="text-xs text-gray-500 mt-0.5">以下为【岑寒】负责类目的完整上新路径，上架时选择正确的类目路径才能对接。</p>
+      </div>
+
+      <div class="overflow-x-auto rounded-lg border border-gray-200">
+        <table class="w-full text-left text-sm text-gray-600">
+          <thead class="bg-orange-500 text-white font-semibold">
+            <tr>
+              <th class="py-3 px-4 w-16 text-center">序号</th>
+              <th class="py-3 px-4">类目路径</th>
+              <th class="py-3 px-4">类目状态</th>
+              <th class="py-3 px-4 text-center">操作</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr class="hover:bg-orange-50/50 transition">
+              <td class="py-3 px-4 text-center font-medium text-gray-500">1</td>
+              <td class="py-3 px-4">服装、鞋靴和珠宝 > 童装 > 女童服装 > 女童时尚长袖衫 > 女童时尚卫衣</td>
+              <td class="py-3 px-4"><span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">热招中</span></td>
+              <td class="py-3 px-4 text-center">
+                <a href="#" class="text-orange-500 hover:text-orange-600 font-medium text-xs">去上架</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-orange-50/50 transition">
+              <td class="py-3 px-4 text-center font-medium text-gray-500">2</td>
+              <td class="py-3 px-4">服装、鞋靴和珠宝 > 童装 > 女童服装 > 女童时尚长袖衫 > 女童时尚连帽衫</td>
+              <td class="py-3 px-4"><span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">热招中</span></td>
+              <td class="py-3 px-4 text-center">
+                <a href="#" class="text-orange-500 hover:text-orange-600 font-medium text-xs">去上架</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-orange-50/50 transition">
+              <td class="py-3 px-4 text-center font-medium text-gray-500">3</td>
+              <td class="py-3 px-4">服装、鞋靴和珠宝 > 童装 > 女童服装 > 女童休闲套装 > 女童运动衫</td>
+              <td class="py-3 px-4"><span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">推荐上新</span></td>
+              <td class="py-3 px-4 text-center">
+                <a href="#" class="text-orange-500 hover:text-orange-600 font-medium text-xs">去上架</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
